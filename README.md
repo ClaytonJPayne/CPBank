@@ -10,6 +10,7 @@ The program is intended to implement an application-level protocol that could be
 The client and server communicate through "request"/"receipt" pairs using comma-delimited 4-tuples:
 
 Client -> (msg_code,account_num,transaction_amount,pin_num) -> Server
+
 Server -> (msg_code,account_num,transaction_amount,balance) -> Client
 
 msg_code           - unique three-byte message type identifier in UTF-8
