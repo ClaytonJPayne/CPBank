@@ -13,9 +13,13 @@ Client -> (msg_code,account_num,transaction_amount,pin_num) -> Server
 Server -> (msg_code,account_num,transaction_amount,balance) -> Client
 
 msg_code           - unique three-byte message type identifier in UTF-8
+
 account_num        - the account number
+
 transaction_amount - how much is being deposited or withdrawn
+
 pin_num            - the pin number
+
 balance            - the available balance
 
 Client opens a new TCP connection for every login attempt.
